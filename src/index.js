@@ -1,8 +1,8 @@
 import React from 'react'
-import { render } from 'react-dom'
-import Tictactoe from './Tictactoe'
+import ReactDOM from 'react-dom'
+import Tictactoe from './container'
 
-render(
+ReactDOM.render(
   <Tictactoe />,
   document.getElementById('root')
 )
