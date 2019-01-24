@@ -1,0 +1,31 @@
+{
+  "name": "jogo-da-velha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "homepage": "https://github.com/alalbux/jogo-da-velha#readme",
+  "devDependencies": {
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alalbux/jogo-da-velha.git"
+  },
+  "keywords": [],
+  "author": "Amanda Albuquerque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alalbux/jogo-da-velha/issues"
+  }
+}
