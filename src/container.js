@@ -3,11 +3,11 @@ import React, {
 } from 'react'
 import './style.css'
 
-import DisplayScore from './DisplayScore'
-import Restart from './Restart'
-import Tiles from './Tiles'
+import DisplayScore from './score'
+import Restart from './reset'
+import Tiles from './list'
 
-class jogoDaVeia extends Component {
+class Tictactoe extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -180,4 +180,4 @@ class jogoDaVeia extends Component {
   }
 }
 
-export default jogoDaVeia
+export default Tictactoe
