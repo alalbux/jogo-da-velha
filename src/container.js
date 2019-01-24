@@ -117,19 +117,19 @@ class Tictactoe extends Component {
   checkGame(){
     // use ramda
     for(var i = 1; i <= 2; i++){
-      if((this.state.tiles[0].clicked ===i && this.state.tiles[1].clicked ===i && this.state.tiles[2].clicked ===i) ||
-         (this.state.tiles[3].clicked ===i && this.state.tiles[4].clicked ===i && this.state.tiles[5].clicked ===i) ||
-         (this.state.tiles[6].clicked ===i && this.state.tiles[7].clicked ===i && this.state.tiles[8].clicked ===i) ||
-         (this.state.tiles[0].clicked ===i && this.state.tiles[3].clicked ===i && this.state.tiles[6].clicked ===i) ||
-         (this.state.tiles[1].clicked ===i && this.state.tiles[4].clicked ===i && this.state.tiles[7].clicked ===i) ||
-         (this.state.tiles[2].clicked ===i && this.state.tiles[5].clicked ===i && this.state.tiles[8].clicked ===i) ||
-         (this.state.tiles[0].clicked ===i && this.state.tiles[4].clicked ===i && this.state.tiles[8].clicked ===i) ||
-         (this.state.tiles[0].clicked ===i && this.state.tiles[4].clicked ===i && this.state.tiles[8].clicked ===i) ||
-         (this.state.tiles[2].clicked ===i && this.state.tiles[4].clicked ===i && this.state.tiles[6].clicked ===i)){
-          console.log(`Player ${i} won!`)
-          return this.findWinner(i);
-      }
-    }
+      if(( this.state.tiles[0].clicked === i && this.state.tiles[1].clicked === i && this.state.tiles[2].clicked === i ) ||
+         ( this.state.tiles[3].clicked === i && this.state.tiles[4].clicked === i && this.state.tiles[5].clicked === i ) ||
+         ( this.state.tiles[6].clicked === i && this.state.tiles[7].clicked === i && this.state.tiles[8].clicked === i ) ||
+         ( this.state.tiles[0].clicked === i && this.state.tiles[3].clicked === i && this.state.tiles[6].clicked === i ) ||
+         ( this.state.tiles[1].clicked === i  && this.state.tiles[4].clicked === i  && this.state.tiles[7].clicked === i ) ||
+         ( this.state.tiles[2].clicked === i  && this.state.tiles[5].clicked === i  && this.state.tiles[8].clicked === i ) ||
+         ( this.state.tiles[0].clicked === i  && this.state.tiles[4].clicked === i  && this.state.tiles[8].clicked === i ) ||
+         ( this.state.tiles[0].clicked === i  && this.state.tiles[4].clicked === i  && this.state.tiles[8].clicked === i ) ||
+         ( this.state.tiles[2].clicked === i  && this.state.tiles[4].clicked === i  && this.state.tiles[6].clicked === i )){
+          console.log(`Player ${i} won!`) 
+          return this.findWinner(i); 
+      } 
+    } 
 
     if(this.state.tilesClicked === 9){
       console.log(`DRAW`);
@@ -143,8 +143,8 @@ class Tictactoe extends Component {
         tilesClicked: 0,
         tiles: this.resetBoard(),
         player: winner === 1 ? 2 : 1,
-        scorePlayer1: winner === 1 ? this.state.scorePlayer1+1 : this.state.scorePlayer1,
-        scorePlayer2: winner === 2 ? this.state.scorePlayer2+1 : this.state.scorePlayer2,
+        scorePlayer1: winner === 1 ? this.state.scorePlayer1 + 1 : this.state.scorePlayer1,
+        scorePlayer2: winner === 2 ? this.state.scorePlayer2 + 1 : this.state.scorePlayer2,
       });
     } else {
       this.setState({
